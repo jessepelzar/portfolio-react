@@ -1,14 +1,11 @@
 import React from 'react'
 
 export const HomeBody = () => {
-    const bottomTextStyle = {
-        color: "#9f9f9f",
-        marginTop: '27px'
-    }
+
     return (
-        <div className="home-body-container vertical-center">
+        <div className="body-container md-container vertical-center text-centered">
             <p className="text-lg-caladea">New york based software engineer specializing in creating digital prodcuts.</p>
-            <p className="text-lg-montserrat" style={bottomTextStyle}>Currently seeking opportunities</p>
+            <p className="text-lg-montserrat text-dark spacing-top-sm">Currently seeking opportunities</p>
         </div>
     )
 }

@@ -6,7 +6,7 @@ export const ContactPage = () => {
         marginTop: '27px'
     }
     return (
-        <div className="home-body-container vertical-center">
+        <div className="body-container vertical-center text-centered">
             <a href="mailto:jessepelzar@gmail.com" target="_blank" rel="noopener noreferrer" className="text-lg-caladea">Jessepelzar@gmail.com</a>
             <p className="text-lg-montserrat" style={bottomTextStyle}>Email Me</p>
         </div>
