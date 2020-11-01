@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import { HomeBody } from './components/pages/home/HomeBody';
 import { AboutBody } from './components/pages/about/AboutBody';
 import { ContactPage } from './components/pages/contact/ContactPage';
+import { WorkBody } from './components/pages/work/WorkBody';
 
 const App = () => {
   return (
@@ -22,6 +23,8 @@ const App = () => {
           <Route exact path='/' component={HomeBody} />
           <Route path='/about' component={AboutBody} />
           <Route path='/contact' component={ContactPage} />
+          <Route path='/work' component={WorkBody} />
+          
           {/* <Route path='/about'> <AboutBody /> </Route>
           <Route exact path='/'> <HomeBody /> </Route> */}
 

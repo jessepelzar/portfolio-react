@@ -4,7 +4,7 @@ import { Skills } from './left/Skills'
 
 export const AboutLeft = () => {
     return (
-        <div className="sm-container">
+        <div className="sm-container spacing-bottom-lg">
             <Description />
             <Skills />
         </div>
