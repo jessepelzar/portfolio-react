@@ -15,7 +15,7 @@ export const WorkBody = () => {
         },
         cell_3:{
             title: "Instascraper",
-            text: "This is a hashtag and location based data scraper for obtaining Instagram acount data associeted with a hashtag or location. This project is built using the python framework Django.",
+            text: "This is a hashtag and location based data scraper for obtaining Instagram acount data associated with a hashtag or location. This project is built using the python framework Django.",
             link: "https://github.com/jessepelzar/instascraper"
         },
         cell_4:{
