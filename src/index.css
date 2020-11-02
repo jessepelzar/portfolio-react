@@ -229,6 +229,13 @@ p {
   .text-md-caladea {
     font-size: 24px;
     line-height: 35px;
+    font-weight: 400;
+  }
+
+  .text-md-caladea-bold {
+    font-size: 24px;
+    line-height: 35px;
+    font-weight: 400;
   }
 
   .stack-for-mobile {
