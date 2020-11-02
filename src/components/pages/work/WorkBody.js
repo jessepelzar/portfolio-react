@@ -25,8 +25,8 @@ export const WorkBody = () => {
         }
     }
     return (
-        <div className="body-container">
-            <div className="lg-container">
+        <div className="body-container ">
+            <div className="lg-container ">
                 <div className="just-flex-between spacing-top-md spacing-bottom-md stack-for-mobile">
                     <div className="sm-container">
                         <ProjectCell title={info.cell_1.title} txt={info.cell_1.text} link={info.cell_1.link}/>        

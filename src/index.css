@@ -167,7 +167,8 @@ p {
 }
 
 .spacing-top-md {
-  padding-top: 62px;
+  /* padding-top: 62px; */
+  padding-top: 10vh;
 }
 
 .spacing-top-sm {
@@ -183,7 +184,8 @@ p {
 }
 
 .spacing-bottom-md {
-  padding-bottom: 62px;
+  /* padding-bottom: 62px; */
+  padding-bottom: 10vh;
 }
 
 .spacing-bottom-sm {
@@ -243,9 +245,13 @@ p {
 
   .lg-container {
     margin: 0;
-    width: 100vw;
+    width: 95vw !important;
+    margin-left: 5vw !important;
   }
 
+  .just-flex-between {
+    width: 100% !important;
+  }
   .skill-cell {
     margin-right: 20px;
     width: 30px !important;
@@ -271,7 +277,10 @@ p {
 .lg-container {
   margin: 0 auto;
   width: 82vw;
-  height: 50%;
+  /* height: 50%; */
+  height: fit-content;
+
+
   /* height: 60vh; */
   /* max-width: 900px; */
 }
