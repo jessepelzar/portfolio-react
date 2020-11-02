@@ -11,6 +11,9 @@ html::-webkit-scrollbar {
   display: none;
 }
 
+/* .lottie {
+  z-index: 100;
+} */
 
 p {
   margin: 0;
@@ -49,6 +52,10 @@ p {
 .footer {
   bottom: 0;
   background: linear-gradient(to top, #141414, #141414, transparent);
+}
+
+.banner {
+  display: none;
 }
 
 .text-lg-caladea {
@@ -180,13 +187,18 @@ p {
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
   .text-lg-rmo {
     font-size: 16px;
   }
 
   .text-lg-montserrat-bold {
     font-size: 16px;
+  }
+
+  .text-lg-montserrat {
+    font-size: 14px;
+    line-height: 17px;
   }
 
   .text-lg-caladea {
@@ -226,6 +238,9 @@ p {
     /* background: white; */
   }
   
+  .banner {
+    display: block;
+  }
 }
 
 
