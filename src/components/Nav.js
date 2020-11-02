@@ -8,7 +8,8 @@ export const Nav = () => {
         <>
                 <div className="navbar header">
                     <a href="/about" className="text-lg-rmo">ABOUT</a>
-                    <a href="/" className="text-lg-rmo">JESSE PELZAR</a>
+                    <a href="/" className="text-lg-rmo nav-web">JESSE PELZAR</a>
+                    <a href="/" className="text-lg-rmo nav-mobile">HOME</a>
                     <a href="/work" className="text-lg-rmo">WORK</a>
                 </div>
                 <div className="navbar footer">

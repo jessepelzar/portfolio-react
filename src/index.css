@@ -40,18 +40,26 @@ p {
   z-index: 10;
 }
 
+.nav-web {
+  display: block;
+}
+
+.nav-mobile {
+  display: none;
+}
+
 .navbar > a:hover {
   color: #00ff00;
 }
 
 .header {
   top: 0;
-  background: linear-gradient(to bottom, #141414, #141414, transparent);
+  background: linear-gradient(to bottom, #141414, #141414, rgba(20,20,20,0));
 }
 
 .footer {
   bottom: 0;
-  background: linear-gradient(to top, #141414, #141414, transparent);
+  background: linear-gradient(to top, #141414, #141414, rgba(20,20,20,0));
 }
 
 .banner {
@@ -188,6 +196,14 @@ p {
 
 
 @media screen and (max-width: 550px) {
+  .nav-web {
+    display: none;
+  }
+  
+  .nav-mobile {
+    display: block;
+  }
+
   .text-lg-rmo {
     font-size: 16px;
   }
