@@ -11,7 +11,7 @@ export const WorkBody = () => {
         cell_2:{
             title: "Axis Project",
             text: "This project is a custom laser engraver software with a canvas to create designs which could then be sent to the device through a serial connection.",
-            link: "https://github.com/jessepelzar/laserEngraver"
+            link: "https://github.com/jessepelzar/Axis-Public"
         },
         cell_3:{
             title: "Instascraper",
