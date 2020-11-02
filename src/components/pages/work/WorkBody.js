@@ -14,9 +14,9 @@ export const WorkBody = () => {
             link: "https://github.com/jessepelzar/laserEngraver"
         },
         cell_3:{
-            title: "Bird3",
-            text: "This project is a custom laser engraver software with a canvas to create designs which could then be sent to the device through a serial connection.",
-            link: "https://github.com/jessepelzar/Flappy_Bird_RL"
+            title: "Instascraper",
+            text: "This is a hashtag and location based data scraper for obtaining Instagram acount data associeted with a hashtag or location. This project is built using the python framework Django",
+            link: "https://github.com/jessepelzar/instascraper"
         },
         cell_4:{
             title: "THIS",
