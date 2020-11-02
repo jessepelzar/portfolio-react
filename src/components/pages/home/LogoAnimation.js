@@ -16,8 +16,8 @@ export const LogoAnimation = () => {
     return (
         <div className="spacing-bottom-sm">
         <Lottie options={defaultOptions}
-              height={80}
-              width={80}
+              height={70}
+              width={70}
               isStopped={false}
               isPaused={false}/>
         </div>

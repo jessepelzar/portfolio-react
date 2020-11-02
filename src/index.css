@@ -63,7 +63,9 @@ p {
 }
 
 .banner {
+  position: static;
   display: none;
+  margin-top: -140px;
 }
 
 .text-lg-caladea {
@@ -220,8 +222,8 @@ p {
   }
 
   .text-lg-caladea {
-    font-size: 36px;
-    line-height: 55px;
+    font-size: 28px;
+    line-height: 49px;
   }
 
   .text-md-caladea {
