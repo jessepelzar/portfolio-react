@@ -9,7 +9,7 @@ import logoc from '../../../../assets/logo-c.svg'
 export const Skills = () => {
     return (
         <div className="sm-cell-container spacing-top-lg">
-            <p className="text-lg-montserrat-bold">Proficient in:</p>
+            <p className="text-md-caladea-bold">Proficient in:</p>
             <div className="skills-list spacing-top-sm">
                 <Skill img={logojs}></Skill>
                 <Skill img={logohtml}></Skill>

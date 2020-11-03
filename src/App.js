@@ -12,7 +12,7 @@ import { WorkBody } from './components/pages/work/WorkBody';
 const App = () => {
   return (
     <Router>
-      <div className="container">
+      {/* <div className="container"> */}
         <Nav />
         {/* <ul>
             <li><Link to='/'>Home</Link></li>
@@ -20,16 +20,20 @@ const App = () => {
         </ul> */}
         {/* <Switch> */}
         {/* <hr /> */}
+        <div className="vertical-center">
           <Route exact path='/' component={HomeBody} />
-          <Route path='/about' component={AboutBody} />
           <Route path='/contact' component={ContactPage} />
+        
+          <Route path='/about' component={AboutBody} />
           <Route path='/work' component={WorkBody} />
           
+          
+        </div>
           {/* <Route path='/about'> <AboutBody /> </Route>
           <Route exact path='/'> <HomeBody /> </Route> */}
 
         {/* </Switch> */}
-      </div>
+      {/* </div> */}
     </Router>
   )
   

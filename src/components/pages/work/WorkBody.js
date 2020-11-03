@@ -25,9 +25,10 @@ export const WorkBody = () => {
         }
     }
     return (
-        <div className="body-container ">
-            <div className="lg-container ">
-                <div className="just-flex-between spacing-top-md spacing-bottom-md stack-for-mobile">
+        // <div className="scroll-y">
+        <div className="body-container scroll-y">
+            <div className="lg-container scroll-lock-x">
+                <div className="just-flex-around spacing-top-md spacing-bottom-md stack-for-mobile">
                     <div className="sm-container">
                         <ProjectCell title={info.cell_1.title} txt={info.cell_1.text} link={info.cell_1.link}/>        
                     </div>
@@ -35,7 +36,7 @@ export const WorkBody = () => {
                         <ProjectCell title={info.cell_2.title} txt={info.cell_2.text} link={info.cell_2.link}/>
                     </div>
                 </div>
-                <div className="just-flex-between spacing-top-md spacing-bottom-md stack-for-mobile">
+                <div className="just-flex-around spacing-top-md spacing-bottom-md stack-for-mobile">
                     <div className="sm-container">
                         <ProjectCell title={info.cell_3.title} txt={info.cell_3.text} link={info.cell_3.link}/>        
                     </div>
@@ -44,6 +45,7 @@ export const WorkBody = () => {
                     </div>
                 </div>
             </div>
+        {/* </div> */}
         </div>
     )
 }

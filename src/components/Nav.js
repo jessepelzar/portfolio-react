@@ -7,12 +7,14 @@ export const Nav = () => {
     return (
         <>
                 <div className="navbar header">
+                    {/* <div className="blur"></div> */}
                     <a href="/about" className="text-lg-rmo">ABOUT</a>
                     <a href="/" className="text-lg-rmo nav-web">JESSE PELZAR</a>
                     <a href="/" className="text-lg-rmo nav-mobile">HOME</a>
                     <a href="/work" className="text-lg-rmo">WORK</a>
                 </div>
                 <div className="navbar footer">
+                    {/* <div className="blur"></div> */}
                     <a href="https://github.com/jessepelzar" target="_blank" rel="noopener noreferrer" className="text-lg-rmo">GITHUB</a>
                     <a href="/contact" className="text-lg-rmo">CONTACT ME</a>
                 </div>

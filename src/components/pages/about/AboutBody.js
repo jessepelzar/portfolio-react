@@ -4,11 +4,13 @@ import { AboutRight } from './AboutRight'
 
 export const AboutBody = () => {
     return (
-        <div className="body-container">
-            <div className="lg-container just-flex-between stack-for-mobile spacing-top-md">
-                <AboutLeft />
-                <AboutRight />
+        // <div className="scroll-y">
+            <div className="about-container scroll-y scroll-lock-x" >
+                <div className=" lg-container just-flex-around stack-for-mobile spacing-top-md">
+                    <AboutLeft />
+                    <AboutRight />
+                </div>
             </div>
-        </div>
+        // </div>
     )
 }

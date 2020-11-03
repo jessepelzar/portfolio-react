@@ -7,7 +7,9 @@ export const Experience = ({label, text, date}) => {
             <p className="text-lg-montserrat-bold spacing-bottom-xsm">{label}</p>
             <p className="text-lg-montserrat-bold text-nowrap">{date}</p>
         </div>
-        <p className="text-sm-montserrat-bold text-dark spacing-bottom-sm">{text}</p>
+        <div className="xsm-container">
+            <p className="text-sm-montserrat-bold text-dark spacing-bottom-sm">{text}</p>
+        </div>
         </>
     )
 }

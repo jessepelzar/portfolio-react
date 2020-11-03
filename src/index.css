@@ -4,16 +4,25 @@ html, body {
   padding: 0;
   /* cursor: url('assets/cursor.png'), auto; */
   background-color: #141414;
+  /* overflow-y: hidden; */
+  /* position: fixed; */
+  /* overflow: hidden; */
+  /* cursor: url('assets/cursor.png') 25 15, pointer; */
+  cursor: url('assets/cursor.svg') 27 27, none;
 }
+
 
 /* hide the scrollllllll */
-html::-webkit-scrollbar {
-  display: none;
+::-webkit-scrollbar,
+*::-webkit-scrollbar {
+display: none;
 }
 
-/* .lottie {
-  z-index: 100;
-} */
+.body-container {
+  height: fit-content;
+  margin-top: 8vh;
+  margin-bottom: 8vh;
+}
 
 p {
   margin: 0;
@@ -26,18 +35,27 @@ p {
   background: transparent;
   -webkit-appearance: none;
   -moz-appearance: none;
-  /* cursor: url('assets/cursor.png'), auto; */
+  cursor: url('assets/cursor.svg') 27 27, none;
  }
 
 .navbar {
-  width: 92vw;
-  height: 30px;
-  padding: 4vh 4vw 4vh 4vw;
-  display: inline-flex;
+  width: 96vw;
+  height: 20px;
+  padding: 2vw 2vw 2vw 2vw;
+  display: flex;
   justify-content: space-between;
   position: fixed;
-  background: #141414;
+  /* background: #141414; */
   z-index: 10;
+  white-space: nowrap;
+  /* backdrop-filter: url(Rectangle\ 24.svg) blur(2px) saturate(100%); */
+  /* backdrop-filter: blur(1px); */
+}
+
+.vertical-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .nav-web {
@@ -52,20 +70,49 @@ p {
   color: #00ff00;
 }
 
+.enable-scroll {
+  position: inherit;
+  /* overflow-y: auto; */
+}
+
 .header {
   top: 0;
-  background: linear-gradient(to bottom, #141414, #141414, rgba(20,20,20,0));
+  background: linear-gradient(to bottom, #141414,  #141414, rgba(20,20,20,0));
 }
 
 .footer {
   bottom: 0;
-  background: linear-gradient(to top, #141414, #141414, rgba(20,20,20,0));
+  background: linear-gradient(to top, #141414,  #141414, rgba(20,20,20,0));
 }
 
 .banner {
-  position: static;
+  /* position: static; */
   display: none;
-  margin-top: -140px;
+  /* margin-top: -140px; */
+}
+.scroll-y {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.scroll-y::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-lock-y {
+  overflow-y: hidden;
+}
+
+.scroll-lock-x {
+  overflow-x: hidden;
+}
+
+.text-lg-caladea-bold {
+  font-family: 'Caladea', serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 74px;
+  color: white;
 }
 
 .text-lg-caladea {
@@ -88,7 +135,7 @@ p {
   font-family: 'Caladea', serif;
   font-weight: 400;
   font-size: 36px;
-  line-height: 55px;
+  line-height: 52px;
   color: white;
 }
 
@@ -140,6 +187,14 @@ p {
   color: white;
 }
 
+.text-sm-rmo {
+  font-family: 'Rubik Mono One', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+}
+
 .text-nowrap {
   white-space: nowrap;
 }
@@ -170,7 +225,7 @@ p {
 
 .spacing-top-md {
   /* padding-top: 62px; */
-  padding-top: 10vh;
+  padding-top: 8vh;
 }
 
 .spacing-top-sm {
@@ -182,12 +237,12 @@ p {
 }
 
 .spacing-bottom-lg {
-  padding-bottom: 90px;
+  padding-bottom: 8vh;
 }
 
 .spacing-bottom-md {
   /* padding-bottom: 62px; */
-  padding-bottom: 10vh;
+  padding-bottom: 8vh;
 }
 
 .spacing-bottom-sm {
@@ -199,7 +254,15 @@ p {
 }
 
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
+
+  .navbar {
+    width: 92vw;
+    height: 17px;
+
+    padding: 2vh 4vw 2vh 4vw;
+  }
+
   .nav-web {
     display: none;
   }
@@ -209,7 +272,13 @@ p {
   }
 
   .text-lg-rmo {
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .text-md-rmo {
+    font-size: 12px;
+    line-height: 15px;
   }
 
   .text-lg-montserrat-bold {
@@ -221,22 +290,26 @@ p {
     line-height: 17px;
   }
 
+  .text-lg-caladea-bold {
+    font-size: 32px;
+    line-height: 49px;
+  }
+
   .text-lg-caladea {
     font-size: 28px;
     line-height: 49px;
+  }
+  
+  .text-md-caladea-bold {
+    font-size: 24px;
+    line-height: 35px;
   }
 
   .text-md-caladea {
     font-size: 24px;
     line-height: 35px;
-    font-weight: 400;
   }
 
-  .text-md-caladea-bold {
-    font-size: 24px;
-    line-height: 35px;
-    font-weight: 400;
-  }
 
   .stack-for-mobile {
     /* margin: 0 auto; */
@@ -258,9 +331,15 @@ p {
     margin-left: 5vw !important;
   }
 
+  .sm-container {
+    margin: 0;
+    width: 95% !important;
+  }
+
   .just-flex-between {
     width: 100% !important;
   }
+
   .skill-cell {
     margin-right: 20px;
     width: 30px !important;
@@ -272,48 +351,57 @@ p {
   .banner {
     display: block;
   }
+
+  .work-container {
+    padding-left: 0 !important;
+    margin-top: 0 !important;
+    float: left;
+    display: block;
+  }
+
+  .about-container {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+
+  .just-flex-around {
+    justify-content: space-between !important;
+  }
+
+  .scroll-y {
+    padding-bottom: 10vh;
+  }
+
 }
 
 
 
-.body-container {
-  margin: 0 auto;
-  height: calc(100vh - 200px);
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
+
 
 .lg-container {
   margin: 0 auto;
   width: 82vw;
-  /* height: 50%; */
   height: fit-content;
-
-
-  /* height: 60vh; */
-  /* max-width: 900px; */
 }
 
 .md-container {
   width: 60vw;
   max-width: 900px;
-  min-width: 320px;
-  /* height: 100%; */
+  min-width: 300px;
+ height: fit-content;
 }
 
 .sm-container {
   width: 36vw;
-  min-width: 320px;
+  min-width: 300px;
+  max-width: 700px;
   height: fit-content;
-  /* height: 100%; */
-  /* max-width: 900px; */
 }
 
 
 .xsm-container {
-  width: 20vw;
+  width: 23vw;
   min-width: 280px;
-  /* max-width: 900px; */
 }
 
 .sm-cell-container {
@@ -321,27 +409,65 @@ p {
   height: 90px;
 }
 
-.vertical-center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+
 
 .just-flex-between {
-  /* height: 100%; */
   display: flex;
   justify-content: space-between;
+}
+
+.just-flex-evenly {
+  display: flex;
+  justify-content: space-around;
+}
+
+.just-flex-around {
+  display: flex;
+  justify-content: space-around;
 }
 
 .just-flex-between-v {
   display: flex;
   flex-direction: column;
-  justify-content: space-between
+  justify-content: space-between;
+}
+
+.just-flex-around-v {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* ----------------------------------- */
+/* -------------- Static Containers -------------- */
+/* ----------------------------------- */
+
+
+.test::-webkit-scrollbar {
+  display: none;
+}
+
+.static-container {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: fixed;
+}
+
+.static-inner {
+  max-width: 800px;
+  width: 80%;
+  margin: 0 auto;
 }
 
 /* ----------------------------------- */
 /* -------------- About -------------- */
 /* ----------------------------------- */
+
 
 .about-description {
   width: 20vw;
@@ -356,17 +482,11 @@ p {
   float: left;
   position: relative;
   margin-right: 30px;
-  width: 50px;
-  height: 50px;
-  /* z-index: -1; */
-  /* background: white; */
+  width: 28px;
+  height: 28px;
 }
 
-/* .skill-cell > span {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-} */
+
 
 /* ----------------------------------- */
 /* --------------- Work -------------- */
@@ -389,3 +509,6 @@ p {
 .project-text {
   height: 100px;
 }
+
+
+
