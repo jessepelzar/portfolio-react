@@ -8,7 +8,8 @@ html, body {
   /* position: fixed; */
   /* overflow: hidden; */
   /* cursor: url('assets/cursor.png') 25 15, pointer; */
-  cursor: url('assets/cursor.svg') 27 27, none;
+
+  /* cursor: url('assets/cursor.svg') 27 27, none; */
 }
 
 
@@ -35,7 +36,7 @@ p {
   background: transparent;
   -webkit-appearance: none;
   -moz-appearance: none;
-  cursor: url('assets/cursor.svg') 27 27, none;
+  /* cursor: url('assets/cursor.svg') 27 27, none; */
  }
 
 .navbar {
@@ -220,7 +221,7 @@ p {
 }
 
 .spacing-top-lg {
-  padding-top: 90px;
+  padding-top: 15vh;
 }
 
 .spacing-top-md {
@@ -237,7 +238,7 @@ p {
 }
 
 .spacing-bottom-lg {
-  padding-bottom: 8vh;
+  padding-bottom: 15vh;
 }
 
 .spacing-bottom-md {
@@ -370,6 +371,14 @@ p {
 
   .scroll-y {
     padding-bottom: 10vh;
+  }
+
+  .project-text {
+    height: auto !important;
+  }
+
+  .project-cell > a {
+    margin-top: 0px !important;
   }
 
 }
@@ -511,4 +520,8 @@ p {
 }
 
 
-
+.test-bttn {
+  width: 40px;
+  height: 40px;
+  background: red;
+}

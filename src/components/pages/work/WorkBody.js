@@ -4,8 +4,8 @@ import { ProjectCell } from './ProjectCell'
 export const WorkBody = () => {
     const info = {
         cell_1:{
-            title: `Flappy Bird RL "AI"`,
-            text: "This project resembles the classic Flappy Bird mobile game but with the additionn of Reinforcement Learning to develop a policy for an agent to play the game autonomously.",
+            title: `Flappy Bird RL`,
+            text: "This project resembles the classic Flappy Bird mobile game but with the addition of Reinforcement Learning to develop a policy for an agent to play the game autonomously.",
             link: "https://github.com/jessepelzar/Flappy_Bird_RL"
         },
         cell_2:{

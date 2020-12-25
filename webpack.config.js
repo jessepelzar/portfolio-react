@@ -16,7 +16,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.js$/,
+                test: /\.(jsx|js)$/,
                 loader: 'babel-loader',
                 exclude: /node_modules/
             },
@@ -35,7 +35,7 @@ module.exports = {
     },
     devServer: {
         historyApiFallback: true
-      },
+    },
     plugins: [
         new HtmlWebpackPlugin({
             template: __dirname + '/src/index.html',

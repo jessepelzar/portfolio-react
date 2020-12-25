@@ -5,6 +5,7 @@ import logohtml from '../../../../assets/logo-html.svg'
 import logocss from '../../../../assets/logo-css.svg'
 import logopy from '../../../../assets/logo-python.svg'
 import logoc from '../../../../assets/logo-c.svg'
+import logocpp from '../../../../assets/logo-cpp.svg'
 
 export const Skills = () => {
     return (
@@ -16,6 +17,7 @@ export const Skills = () => {
                 <Skill img={logocss}></Skill>
                 <Skill img={logopy}></Skill>
                 <Skill img={logoc}></Skill>
+                <Skill img={logocpp}></Skill>
             </div>
         </div>
     )

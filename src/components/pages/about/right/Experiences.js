@@ -9,7 +9,7 @@ export const Experiences = () => {
         <div className="sm-container">
             <Experience label={"Binghamton University"} date={"2019 - 2020"} text={text1}/>
             <Experience label={"Advanced Photonic Sciences"} date={"2019 - 2020"} text={text2}/>
-            <Experience label={"Loomx LLC."} date={"2017 - 2020"} text={text3}/>
+            <Experience label={"Loomx LLC"} date={"2017 - 2020"} text={text3}/>
             {/* <Experience label={"Binghamton University"} date={"2019 - 2020"} text={text1}/> */}
         </div>
     )

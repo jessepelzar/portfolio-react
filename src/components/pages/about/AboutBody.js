@@ -6,7 +6,7 @@ export const AboutBody = () => {
     return (
         // <div className="scroll-y">
             <div className="about-container scroll-y scroll-lock-x" >
-                <div className=" lg-container just-flex-around stack-for-mobile spacing-top-md">
+                <div className=" lg-container just-flex-around stack-for-mobile spacing-top-lg">
                     <AboutLeft />
                     <AboutRight />
                 </div>
